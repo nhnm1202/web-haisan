@@ -12,8 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = document.createElement("div");
         card.className = "col-6 col-md-4 col-lg-3 mb-5";
         card.innerHTML = `<div
-                            class="card bg-info bg-opacity-10 shadow-lg border-info card-hover"
-                            style="width: 21rem;height: 38rem"
+                            class="card bg-info bg-opacity-10 shadow-lg border-info h-100 card-hover"
                           >
                          
                             <img src="${p.image}" class="card-img-top" alt="${p.name}" />
@@ -56,8 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = document.createElement("div");
         card.className = "col-6 col-md-4 col-lg-3 mb-5";
         card.innerHTML = `<div
-                            class="card bg-info bg-opacity-10 shadow-lg border-info card-hover"
-                            style="width: 21rem;height: 38rem"
+                            class="card bg-info bg-opacity-10 shadow-lg border-info h-100 card-hover"                          
                           >
                          
                             <img src="${p.image}" class="card-img-top" alt="${p.name}" />
