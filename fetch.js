@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((products) => {
       products.forEach((p) => {
         const card = document.createElement("div");
-        card.className = "col-lg-3 col-md-4 col-sm-6 mb-5";
+        card.className = "col-6 col-md-4 col-lg-3 mb-5";
         card.innerHTML = `<div
                             class="card bg-info bg-opacity-10 shadow-lg border-info card-hover"
-                            style="width: 25rem"
+                            style="width: 21rem;height: 38rem"
                           >
                          
                             <img src="${p.image}" class="card-img-top" alt="${p.name}" />
@@ -54,10 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       selected.forEach((p) => {
         const card = document.createElement("div");
-        card.className = "col-lg-3 col-md-4 col-sm-6 mb-5";
+        card.className = "col-6 col-md-4 col-lg-3 mb-5";
         card.innerHTML = `<div
                             class="card bg-info bg-opacity-10 shadow-lg border-info card-hover"
-                            style="width: 25rem"
+                            style="width: 21rem"
                           >
                          
                             <img src="${p.image}" class="card-img-top" alt="${p.name}" />
