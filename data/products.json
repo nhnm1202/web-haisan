@@ -6,7 +6,7 @@
     "price": "330.000đ",
     "origin": "Việt Nam",
     "image": "image/tom-cang-xanh/tom-cang-xanh.webp",
-    "link": "allproduct/tom-cang-xanh.html"
+    "link": "tom-cang-xanh.html"
   },
   {
     "id": "2",
@@ -15,7 +15,7 @@
     "price": "1.490.000đ",
     "origin": "Canada",
     "image": "image/tom-alaska/tom-alaska.webp",
-    "link": "allproduct/tom-hum-alaska.html"
+    "link": "tom-hum-alaska.html"
   },
   {
     "id": "3",
@@ -24,7 +24,7 @@
     "price": "1.290.000đ",
     "origin": "Việt Nam",
     "image": "image/tom-hum-xanh/tom-hum-xanh.webp",
-    "link": "allproduct/tom-hum-xanh.html"
+    "link": "tom-hum-xanh.html"
   },
   {
     "id": "4",
@@ -33,7 +33,7 @@
     "price": "745.000đ",
     "origin": "Việt Nam",
     "image": "image/tom-hum-bong/tom-hum-bong.webp",
-    "link": "allproduct/tom-hum-bong.html"
+    "link": "tom-hum-bong.html"
   },
   {
     "id": "6",
@@ -42,7 +42,7 @@
     "price": "269.000đ",
     "origin": "Việt Nam",
     "image": "image/ca-hoi-xong-khoi/ca-hoi-xong-khoi.jpg",
-    "link": "allproduct/ca-hoi-phi-le.html"
+    "link": "ca-hoi-phi-le.html"
   },
   {
     "id": "7",
@@ -51,7 +51,7 @@
     "price": "195.000đ",
     "origin": "Chile",
     "image": "image/ca-hoi-cat-khoanh/ca-hoi-cat-khoanh.webp",
-    "link": "allproduct/ca-hoi-cat-khoanh.html"
+    "link": "ca-hoi-cat-khoanh.html"
   },
   {
     "id": "8",
@@ -60,7 +60,7 @@
     "price": "590.000đ",
     "origin": "Na Uy",
     "image": "image/ca-hoi-nguyen-con/ca-hoi-nguyen-con.webp",
-    "link": "allproduct/ca-hoi-nguyen-con.html"
+    "link": "ca-hoi-nguyen-con.html"
   },
   {
     "id": "9",
@@ -69,7 +69,7 @@
     "price": "1.350.000đ",
     "origin": "Na Uy",
     "image": "image/ca-hoi-phi-le/ca-hoi-phi-le.webp",
-    "link": "allproduct/ca-hoi-phi-le.html"
+    "link": "ca-hoi-phi-le.html"
   },
   {
     "id": "5",
@@ -78,7 +78,7 @@
     "price": "175.000đ",
     "origin": "Na Uy",
     "image": "image/than-ca-hoi-phi-le/than-ca-hoi-phi-le.webp",
-    "link": "allproduct/than-ca-hoi-phi-le.html"
+    "link": "than-ca-hoi-phi-le.html"
   },
   {
     "id": "10",
@@ -87,7 +87,7 @@
     "price": "215.000đ",
     "origin": "Việt Nam",
     "image": "image/cua-thit-CM/cua-thit-CM.webp",
-    "link": "allproduct/cua-thit-CM.html"
+    "link": "cua-thit-CM.html"
   },
   {
     "id": "11",
@@ -96,7 +96,7 @@
     "price": "135.000đ",
     "origin": "Việt Nam",
     "image": "image/so-huyet-7880/so-huyet-7880.webp",
-    "link": "allproduct/so-huyet-7880.html"
+    "link": "so-huyet-7880.html"
   },
   {
     "id": "12",
@@ -105,7 +105,7 @@
     "price": "329.000đ",
     "origin": "Việt Nam",
     "image": "image/oc-Bulot-Ireland/oc-Bulot-Ireland.webp",
-    "link": "allproduct/oc-Bulot-Ireland.html"
+    "link": "oc-Bulot-Ireland.html"
   },
   {
     "id": "13",
@@ -114,7 +114,7 @@
     "price": "259.000đ",
     "origin": "Việt Nam",
     "image": "image/muc-ong/muc-ong.webp",
-    "link": "allproduct/muc-ong.html"
+    "link": "muc-ong.html"
   },
   {
     "id": "14",
@@ -123,7 +123,7 @@
     "price": "25.000đ",
     "origin": "Việt Nam",
     "image": "image/gia-vi/gia-vi.webp",
-    "link": "allproduct/giavi-sashimi.html"
+    "link": "giavi-sashimi.html"
   },
   {
     "id": "15",
@@ -132,7 +132,7 @@
     "price": "100.000đ",
     "origin": "Việt Nam",
     "image": "image/hau/hau.jpg",
-    "link": "allproduct/hau.html"
+    "link": "hau.html"
   },
   {
     "id": "16",
@@ -140,7 +140,7 @@
     "name": "Tôm Khô",
     "price": "550.000đ",
     "origin": "Việt Nam",
-    "image": "/image/tom-kho/tom-kho-1.jpg",
-    "link": "allproduct/tom-kho.html"
+    "image": "image/tom-kho/tom-kho-1.jpg",
+    "link": "tom-kho.html"
   }
 ]

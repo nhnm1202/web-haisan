@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mực Ống</title>
+    <title>Chi tiết sản phẩm - Tôm Càng Xanh Sống</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -24,7 +24,8 @@
   </head>
   <body>
     <header>
-      <div class="bg-info bg-opacity-10">
+      <!-- ======== PHẦN HEADER TOP: logo, tìm kiếm, thời gian, giao hàng ======== -->
+      <div id="header-top" class="bg-info bg-opacity-10">
         <!-- Nút mở danh mục sản phẩm cho mobile Offcanvas Sidebar -->
         <div class="container-fluid offCanvas d-lg-none">
           <div class="offcanvas offcanvas-start" id="demo">
@@ -111,7 +112,6 @@
               </ul>
             </div>
           </div>
-
           <!-- Button to open the offcanvas sidebar -->
           <button
             class="btn"
@@ -126,9 +126,9 @@
         <div class="container-fluid">
           <div class="row align-items-center">
             <div class="col-12 col-md-3 pt-3 text-center">
-              <a href="/index.html"
+              <a href="index.html"
                 ><img
-                  src="/image/logo.png"
+                  src="image/logo.png"
                   alt="logo"
                   class="img-fluid"
                   style="max-height: 70px; width: 120px"
@@ -144,7 +144,7 @@
                   placeholder="Search"
                 />
                 <button class="btn btn-success" type="submit">
-                  <i class="fa fa-search"></i>
+                  <i class="fa fa-search fa-2x"></i>
                 </button>
               </div>
             </div>
@@ -161,6 +161,7 @@
             </div>
 
             <!-- giao hàng -->
+
             <div
               class="col-md-2 mt-3 mt-md-0 d-none d-md-flex align-items-center pt-3"
             >
@@ -174,10 +175,8 @@
         </div>
         <hr class="mb-0 mt-4" />
       </div>
-      <!-------------------->
-      <!------ Nav Bar ----->
-      <!-------------------->
-      <div class="container py-0 my-0">
+      <!-- ======== PHẦN HEADER-MENU: thanh điều hướng chính ======== -->
+      <div id="header-menu" class="container py-0 my-0">
         <div class="row align-items-stretch">
           <!-- Dropdown danh mục -->
           <div class="col-lg-2 d-none d-lg-block">
@@ -289,32 +288,22 @@
           <!-- Nav menus -->
           <div class="col-3 col-md-7 col-lg-5 mb-3 mb-lg-0">
             <nav class="navbar p-0 mt-2">
-              <div class="collapse navbar-collapse show">
-                <ul
-                  class="nav w-100 d-flex justify-content-between fw-semibold"
-                >
-                  <li class="nav-item">
-                    <a class="nav-link text-dark" href="/index.html"
-                      >Trang chủ</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark" href="/about.html"
-                      >Giới thiệu</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark" href="/allproduct.html"
-                      >Sản phẩm</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-dark" href="/contact.html"
-                      >Liên hệ</a
-                    >
-                  </li>
-                </ul>
-              </div>
+              <ul class="nav w-100 d-flex justify-content-between fw-semibold">
+                <li class="nav-item hover">
+                  <a class="nav-link text-dark" href="index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="about.html">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="allproduct.html"
+                    >Sản phẩm</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="contact.html">Liên hệ</a>
+                </li>
+              </ul>
             </nav>
           </div>
 
@@ -322,26 +311,34 @@
           <!-- phone - giỏ hàng - tài khoản -->
           <!---------------------------------->
           <div class="w-100 d-block d-md-none"></div>
+
           <div class="col-3 col-md-5 col-lg-4">
             <div
               class="d-flex justify-content-lg-end justify-content-sm-start w-100 mx-md-4 align-items-center gap-5 pt-2 px-3"
             >
               <div
-                class="d-none d-md-flex align-items-center border p-2 text-bg-danger rounded"
+                class="d-none minh d-md-flex align-items-center border p-2 bg-danger rounded"
               >
-                <i class="fas fa-phone-alt text-info me-2"></i>0368356312
+                <i class="fas fa-phone-alt text-success me-2"></i
+                ><span class="fw-semibold">0368356312</span>
               </div>
-
               <!-- Giỏ hàng -->
-              <button type="button" class="btn btn-primary position-relative">
-                <i class="fas fa-shopping-cart fa-lg fs-3 p-3"></i>
-                <span
-                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-5"
+              <div class="minh">
+                <button
+                  type="button"
+                  class="btn position-relative bg-info bg-opacity-10 border border-info"
                 >
-                  0
-                  <span class="visually-hidden">unread messages</span>
-                </span>
-              </button>
+                  <a href="cart.html" class="text-decoration-none">
+                    <i class="fas fa-shopping-cart fa-lg fs-3 p-3"></i>
+                  </a>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger fs-5"
+                  >
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+              </div>
 
               <!-- tài khoản -->
               <div class="dropdown">
@@ -356,28 +353,267 @@
                   <i class="fa-solid fa-user fa-lg"></i>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="taiKhoanDropdown">
-                  <li
-                    class="btn d-flex align-items-center fs-4"
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#loginModal"
-                    title="Đăng nhập"
-                  >
-                    Đăng nhập
+                  <li>
+                    <button
+                      class="dropdown-item fs-4"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#loginModal"
+                    >
+                      Đăng nhập
+                    </button>
                   </li>
-                  <li
-                    class="btn d-flex align-items-center fs-4"
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#registerModal"
-                    title="Đăng Ký"
-                  >
-                    Đăng Ký
+                  <li>
+                    <button
+                      class="dropdown-item fs-4"
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#registerModal"
+                    >
+                      Đăng ký
+                    </button>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- ======== PHẦN AUTH-MODAL: login và register kiểu modal ======== -->
+      <div id="auth-modal">
+        <!-- Modal Đăng nhập -->
+        <div class="login-modal">
+          <div
+            class="modal fade"
+            id="loginModal"
+            tabindex="-1"
+            aria-labelledby="loginModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content rounded-4">
+                <div class="modal-header border-0">
+                  <h5 class="modal-title fs-2" id="loginModalLabel">
+                    Đăng nhập tài khoản
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Đóng"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form action="/auth/login-modal.html" method="POST">
+                    <!-- Email -->
+                    <div class="mb-3">
+                      <label for="email" class="form-label fs-2">Email</label>
+                      <input
+                        type="email"
+                        class="form-control fs-4"
+                        id="email"
+                        name="email"
+                        placeholder="Nhập email của bạn"
+                        required
+                      />
+                    </div>
+                    <!-- Mật khẩu -->
+                    <div class="mb-3">
+                      <label for="password" class="form-label fs-2"
+                        >Mật khẩu</label
+                      >
+                      <div class="input-group">
+                        <input
+                          type="password"
+                          class="form-control fs-4"
+                          id="password"
+                          name="password"
+                          placeholder="Nhập mật khẩu"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <!-- Ghi nhớ -->
+                    <div class="mb-3 form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="remember"
+                        name="remember"
+                      />
+                      <label class="form-check-label fs-4" for="remember"
+                        >Ghi nhớ đăng nhập</label
+                      >
+                    </div>
+                    <!-- Nút Đăng nhập -->
+                    <button type="submit" class="btn btn-primary w-100 fs-3">
+                      Đăng nhập
+                    </button>
+                  </form>
+                  <div class="text-center mt-3 fs-4">
+                    Chưa có tài khoản?
+                    <a
+                      href="#"
+                      data-bs-target="#registerModal"
+                      data-bs-toggle="modal"
+                      data-bs-dismiss="modal"
+                    >
+                      Đăng Ký
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- JavaScript để bật/tắt mật khẩu -->
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const togglePassword = document.getElementById("togglePassword");
+              const passwordInput = document.getElementById("password");
+              togglePassword.addEventListener("click", function () {
+                // chuyển type
+                const type =
+                  passwordInput.getAttribute("type") === "password"
+                    ? "text"
+                    : "password";
+                passwordInput.setAttribute("type", type);
+                // thay icon
+                this.querySelector("i").classList.toggle("bi-eye");
+                this.querySelector("i").classList.toggle("bi-eye-slash");
+              });
+            });
+          </script>
+        </div>
+        <div class="register-modal">
+          <!-- Modal Đăng ký -->
+          <div
+            class="modal fade"
+            id="registerModal"
+            tabindex="-1"
+            aria-labelledby="registerModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content rounded-4">
+                <div class="modal-header border-0">
+                  <h5 class="modal-title fs-2" id="registerModalLabel">
+                    Đăng ký tài khoản
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Đóng"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form
+                    id="registerForm"
+                    action="/auth/register-modal.html"
+                    method="POST"
+                    novalidate
+                  >
+                    <!-- Họ và tên -->
+                    <div class="mb-3">
+                      <label for="fullname" class="form-label fs-2"
+                        >Họ và tên</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control fs-4"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Nhập họ và tên"
+                        required
+                      />
+                    </div>
+                    <!-- Email -->
+                    <div class="mb-3">
+                      <label for="emailReg" class="form-label fs-2"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control fs-4"
+                        id="emailReg"
+                        name="email"
+                        placeholder="Nhập email của bạn"
+                        required
+                      />
+                    </div>
+                    <!-- Mật khẩu -->
+                    <div class="mb-3">
+                      <label for="passwordReg" class="form-label fs-2"
+                        >Mật khẩu</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control fs-4"
+                        id="passwordReg"
+                        name="password"
+                        placeholder="Nhập mật khẩu"
+                        required
+                      />
+                    </div>
+                    <!-- Nhập lại mật khẩu -->
+                    <div class="mb-3">
+                      <label for="confirmPassword" class="form-label fs-2">
+                        Nhập lại mật khẩu
+                      </label>
+                      <input
+                        type="password"
+                        class="form-control fs-4"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Nhập lại mật khẩu"
+                        required
+                      />
+                      <div class="invalid-feedback fs-4">
+                        Mật khẩu không khớp. Vui lòng kiểm tra lại.
+                      </div>
+                    </div>
+                    <!-- Nút Đăng ký -->
+                    <button type="submit" class="btn btn-info w-100 fs-3">
+                      Đăng ký
+                    </button>
+                  </form>
+                  <div class="text-center mt-3 fs-4">
+                    Đã có tài khoản?
+                    <a
+                      href="#"
+                      data-bs-target="#loginModal"
+                      data-bs-toggle="modal"
+                      data-bs-dismiss="modal"
+                    >
+                      Đăng Nhập
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- JS kiểm tra match passwords -->
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const form = document.getElementById("registerForm");
+              const pwd = document.getElementById("passwordReg");
+              const pwdConfirm = document.getElementById("confirmPassword");
+              // Xoá báo lỗi khi đã nhập đúng
+              pwdConfirm.addEventListener("input", () => {
+                if (pwdConfirm.value === pwd.value) {
+                  pwdConfirm.classList.remove("is-invalid");
+                }
+              });
+              // Chặn submit nếu mật khẩu không khớp
+              form.addEventListener("submit", function (e) {
+                if (pwd.value !== pwdConfirm.value) {
+                  e.preventDefault();
+                  pwdConfirm.classList.add("is-invalid");
+                  pwdConfirm.focus();
+                }
+              });
+            });
+          </script>
         </div>
       </div>
     </header>
@@ -392,10 +628,12 @@
         <li class="breadcrumb-item">
           <a href="/index.html">Trang chủ</a>
         </li>
-        <li class="breadcrumb-item active" aria-current="page">
+        <li class="breadcrumb-item">
           <a href="/allproduct.html">Tất cả sản phẩm</a>
         </li>
-        <li class="breadcrumb-item active" aria-current="page">Mực Ống</li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Tôm Càng Xanh Sống
+        </li>
       </ol>
     </nav>
 
@@ -411,34 +649,26 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="/image/muc-ong/muc-ong.webp"
+                  src="/image/tom-cang-xanh/tom-cang-xanh.webp"
                   class="d-block w-100"
                   style="max-height: 400px"
-                  alt="mực ống"
+                  alt="Tôm Càng Xanh Sống"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/image/muc-ong/muc-ong-1.webp"
+                  src="/image/tom-cang-xanh/tom-cang-xanh-1.webp"
                   class="d-block w-100"
                   style="max-height: 400px"
-                  alt="mực ống 1"
+                  alt="Tôm Càng Xanh Sống - Góc 1"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/image/muc-ong/muc-ong.webp"
+                  src="/image/tom-cang-xanh/tom-cang-xanh-2.webp"
                   class="d-block w-100"
                   style="max-height: 400px"
-                  alt="mực ống"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/image/hau/hau-3.jpg"
-                  class="d-block w-100"
-                  style="max-height: 400px"
-                  alt="hàu - Góc 3"
+                  alt="Tôm Càng Xanh Sống - Góc 2"
                 />
               </div>
             </div>
@@ -472,29 +702,28 @@
 
         <!-- Thông tin sản phẩm -->
         <div class="col-12 col-md-6 mt-4 mt-md-0 p-5">
-          <h2 class="mb-4 fs-1">Mực Ống Tươi Ngon</h2>
+          <h2 class="mb-4 fs-1">Tôm Càng Xanh Sống</h2>
           <p class="mb-4">
             Thương hiệu: <strong>Việt Nam</strong> | Tình trạng:
             <span class="text-success">Còn hàng</span>
           </p>
-          <h3 class="text-danger fs-1 mb-4">259.000₫</h3>
+          <h3 class="text-danger fs-1 mb-4">330.000₫</h3>
           <ul class="list-unstyled mb-4">
-            <li class="mb-2"><strong>Quy cách:</strong> 1 gói ~ 600g</li>
-            <li class="mb-2"><strong>Tình trạng:</strong>Ướp lạnh</li>
+            <li class="mb-2"><strong>Quy cách:</strong> Size 13 - 15 con/kg</li>
             <li class="mb-2">
-              <strong>HSD, bảo quản:</strong> Ngăn mát 0–2°C, sử dụng trong vòng
-              2 ngày sau khi giao
+              <strong>Tình trạng:</strong> Giao sống nước kèm oxi
             </li>
+            <li class="mb-2"><strong>Xuất xứ:</strong> Việt Nam</li>
           </ul>
 
           <div class="d-flex gap-2">
             <a
               href="/cart/cart.html"
               class="btn bg-info bg-opacity-50 p-2 fs-4 fs-semibold"
-              data-id="13"
-              data-name="Mực Ống"
-              data-price="259000"
-              data-image="/image/muc-ong/muc-ong.webp"
+              data-id="6"
+              data-name="Tôm Càng Xanh Sống"
+              data-price="330000"
+              data-image="/image/tom-cang-xanh/tom-cang-xanh.webp"
             >
               <i class="fas fa-credit-card me-2"></i> Mua Ngay
             </a>
@@ -529,12 +758,8 @@
         <div class="tab-pane fade show active" id="info">
           <h5 class="fw-bold">Chi tiết sản phẩm</h5>
           <p>
-            Mực ống câu là một loại hải sản rất phổ biến và được ưa chuộng trên
-            toàn thế giới. Chúng được đánh bắt bằng cách sử dụng các mồi nhỏ như
-            tôm hoặc sứa để thu hút mực đến gần và sử dụng lưỡi câu để bắt
-            chúng. Thịt mực ống có mùi vị đặc trưng và rất phù hợp với nhiều món
-            ăn khác nhau. Nó cũng là một nguồn dinh dưỡng tuyệt vời cho sức khỏe
-            của con người.
+            Tôm càng xanh tươi sống, đánh bắt tại Việt Nam và sơ chế nhanh gọn,
+            bảo quản lạnh để giữ trọn vị ngọt và độ giòn.
           </p>
         </div>
         <div class="tab-pane fade" id="review">
