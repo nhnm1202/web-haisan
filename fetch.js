@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.className = "col-6 col-md-4 col-lg-3 mb-5";
         card.innerHTML = `<div
                             class="card bg-info bg-opacity-10 shadow-lg border-info card-hover"
-                            style="width: 21rem"
+                            style="width: 21rem;height: 38rem"
                           >
                          
                             <img src="${p.image}" class="card-img-top" alt="${p.name}" />
